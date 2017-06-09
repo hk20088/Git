@@ -157,7 +157,7 @@ $ git stash pop             #恢复工作现场
 
 所以，团队合作的分支看起来就像这样： 
 
-![branch](/Git/branch.png)  
+![branch](/branch.png)  
 
 
 ## 标签管理
