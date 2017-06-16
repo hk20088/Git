@@ -238,6 +238,22 @@ warning: You appear to have cloned an empty repository.
 
 如果团队很小，把每个人的公钥收集起来放到服务器的/home/git/.ssh/authorized_keys文件里就是可行的。如果团队人数较多，可以使用 Gitosis 来管理公钥。
 
+### 问题总结
+*1.	问题描述*  
+在windows下向使用git协议传输的Git Repo进行push时会卡住。  
+这是windows上的msysgit的bug，在新版本上已经修复，但要在.gitconfig中做一项配置，不然还是会卡住。  
+
+*解决方案* 
+①  _vimc配置内容：
+```
+sendpack.sideband=false
+```
+
+② 也可以在命令行上添加：
+```
+git config --global sendpack.sideband false
+```
+
 
 
 
