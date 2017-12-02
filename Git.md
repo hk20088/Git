@@ -20,7 +20,7 @@ $ git config --global user.email "email@example.com"
 
 所以，创建一个版本库非常简单：
 - 第一步，选择一个合适的地方，创建一个空目录，比如 *gitlearn*（如果是windows系统，为了避免遇到各种莫名其妙的问题，最好使用纯英文目录  
-- 第二步，使用`git brash`切换到刚创建的目录，再使用命令`git init`把这个目录变成Git可以管理的仓库  
+- 第二步，使用`git bash`切换到刚创建的目录，再使用命令`git init`把这个目录变成Git可以管理的仓库  
 - 第三步，目录下多了一个`.git`目录，版本库创建完成（注意`.git`是隐藏目录，不要随意修改）  
 
 然后，把文件添加到版本库里：
@@ -80,7 +80,7 @@ $ ssh-keygen -t rsa -C "email@example.com"
 
 ### 添加远程库
 
-在GitHub上通过`New Repository`创建一个远程库(**例如创建的库名是：gitlearn**)。（*如果在GitHub创建仓库时，顺带创建了README.md文件，需要先把 README.md文件克隆到本地，这样才能交本地提交后的文件push到GitHub的仓库里*）
+在GitHub上通过`New Repository`创建一个远程库(**例如创建的库名是：gitlearn**)。（*如果在GitHub创建仓库时，顺带创建了README.md文件，需要先把 README.md文件克隆到本地，这样才能将本地提交后的文件push到GitHub的仓库里*）
 
 远程库创建完成后，需要将本地库和远程库作关联，在本地库下运行命令：
 ```
